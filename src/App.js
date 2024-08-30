@@ -1,8 +1,17 @@
-import { Container } from "react-bootstrap";
+import React from "react";
+import CardContainer from "./components/CardContainer";
+import MyNavbar from "./components/MyNavbar";
+import MyFooter from "./components/MyFooter";
+import { data } from "./helpers/data";
 
-function App() {
-  // return <div className="container">Hello React</div>;
-  return <Container>Hello REACT</Container>;
-}
+const App = () => {
+  return (
+    <div className="App">
+      <MyNavbar />
+      <CardContainer data={data} />
+      <MyFooter />
+    </div>
+  );
+};
 
 export default App;
